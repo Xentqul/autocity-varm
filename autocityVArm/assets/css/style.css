@@ -1,0 +1,1775 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Hero-section */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    height: auto;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.content__wrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/*-------------------------------------------------------- HEADER -------------------------------------------------------------*/
+.header {
+    width: 85%;
+    margin: 15px auto;
+    background: rgba(131, 137, 149, 0.11);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.header__brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__logo {
+    font-size: 1.125rem;
+    color: white;
+}
+
+.header__divider {
+    height: 30px;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 0;
+}
+
+.header__social {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header__social img {
+    width: 26px;
+    height: 26px;
+    transition: transform 0.3s ease;
+}
+
+.header__social img:hover {
+    transform: scale(1.05);
+}
+
+.header__phone a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 400;
+}
+
+.header__phone a:hover {
+    text-decoration: underline 1px;
+    text-underline-offset: 0.2rem;
+}
+
+.header__info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header__info__mobile {
+    position: relative;
+    z-index: 1;
+}
+
+.header__address {
+    font-style: normal;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: white;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.header__hours {
+    font-size: 0.9rem;
+}
+
+.header__actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.catalog-button {
+    display: inline-block;
+    padding: 9px 33px;
+    border-radius: 12px;
+    background: linear-gradient(135deg,
+            #FFFFF0 0%,
+            #6EC1E4 100%);
+    color: #284F73;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(110, 193, 228, 0.3);
+}
+
+.catalog-button:hover {
+    transform: translateY(-1.5px);
+    box-shadow: 0 6px 16px rgba(110, 193, 228, 0.4);
+}
+
+/*---------------------------------------------------- HERO SECTION -------------------------------------------------------*/
+.hero__content {
+    position: relative;
+    z-index: 2;
+    max-width: 35%;
+    padding: 4vh 0 0;
+    color: white;
+    text-align: left;
+}
+
+.hero__content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 150%;
+    margin-bottom: 20px;
+    /* text-shadow: 0 2px 4px rgba(0,0,0,0.5); */
+}
+
+.hero__description {
+    font-size: 1.3rem;
+    line-height: 150%;
+    margin-bottom: 30px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.pick-part-button {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 12px;
+    background: linear-gradient(135deg,
+            #FFFFF0 0%,
+            #E6F7FB 30%,
+            #B8E9F5 70%,
+            #6EC1E4 100%);
+    color: #284F73;
+    text-decoration: none;
+    font-weight: 650;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 12px rgba(110, 193, 228, 0.3);
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.pick-part-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(110, 193, 228, 0.4);
+    background: linear-gradient(135deg,
+            #FFFFF0 0%,
+            #E6F7FB 30%,
+            #A0DFF0 70%,
+            #5DB4D8 100%);
+}
+
+.pick-part-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg,
+            rgba(255, 255, 240, 0.1) 0%,
+            rgba(110, 193, 228, 0.1) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.pick-part-button:hover::after {
+    opacity: 1;
+}
+
+/*------------------------------------------- MAIN ---------------------------------------------------*/
+main {
+    background-color: #FAFAFA;
+}
+
+/*---------------------------------------- BENEFITS -------------------------------------------------*/
+
+.benefits {
+    height: 50vh;
+}
+
+.title-with-lines {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.line {
+    height: 8px;
+    background: #12151A;
+}
+
+.left-line {
+    width: 7%;
+}
+
+.right-line {
+    flex-grow: 1;
+}
+
+.section-title {
+    padding: 0 10px;
+    font-size: 1.8rem;
+    color: #12151A;
+}
+
+.benefits-flex {
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefit-number {
+    font-size: 2.5rem;
+    font-weight: 600;
+    display: inline-block;
+    /* Для работы transform */
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover .benefit-number {
+    transform: translateY(-5px);
+    /* Поднимаем цифры на 8px */
+}
+
+.benefit-text {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+/*---------------------------------------- ABOUT US ------------------------------------------------*/
+
+.about {
+    max-width: 100%;
+    width: 100%;
+    padding-top: 80px;
+    display: flex;
+    gap: 100px;
+    text-align: start;
+}
+
+.about__container {
+    width: 35%;
+    padding-left: 7.5%;
+}
+
+.about-us {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 0;
+    padding-bottom: 45px;
+}
+
+.text-paragraph {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.highlight {
+    text-decoration: underline 1.2px;
+    text-underline-offset: 0.2rem;
+}
+
+.about img {
+    height: 100vh;
+    width: 60%;
+    margin-left: auto;
+    object-fit: cover;
+}
+
+/*-------------------------------------------------- REVIEWS ------------------------------------------------*/
+
+.reviews {
+    padding-top: 150px;
+}
+
+.reviews-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+}
+
+.review-content {
+    width: 100%;
+    display: flex;
+    gap: 70px;
+}
+
+.review-image img {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.reviews-flex {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    gap: 60px;
+}
+
+.review-reverse {
+    flex-direction: row-reverse;
+}
+
+.review-gray-card {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: #898989;
+}
+
+.review-gray-card cite,
+.review-gray-card p,
+.review-gray-card .review-product {
+    color: #FAFAFA !important;
+}
+
+.review-gray-card span {
+    color: #FAFAFA !important;
+    transition: color 0.3s ease;
+}
+
+.review-gray-card span:hover {
+    color: #e8eaff !important;
+}
+
+.review-gray-card .review-product {
+    font-weight: 300;
+}
+
+.review-body {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.review-body :nth-child(2) {
+    flex-grow: 1;
+}
+
+.review-store {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.review-rating span {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.review-text {
+    margin: 0;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.review-product span {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #A69F9F;
+    text-decoration: underline 1px;
+    text-underline-offset: 0.2rem;
+    transition: color 0.3s ease;
+}
+
+.review-product span:hover {
+    color: #575757;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.reviews-footer {
+    padding-top: 60px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.reviews-footer a {
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: underline 1px black;
+    text-underline-offset: 0.2rem;
+}
+
+.all-reviews-link:hover {
+    text-decoration: underline 2px;
+}
+
+/*---------------------------------------------- DELIVERY ----------------------------------------*/
+
+.delivery {
+    padding-bottom: 80px;
+}
+
+.delivery-methods {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: min-content;
+    gap: 35px;
+}
+
+.delivery .container {
+    padding-top: 80px;
+}
+
+.left-line-delivery {
+    width: 12%;
+}
+
+.delivery-group {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.delivery-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.delivery-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.delivery-item span {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+/*--------------------------------------------------- PAYMENT ------------------------------------------------------------*/
+
+.payment {
+    padding-bottom: 100px;
+}
+
+.payment .section-title {
+    text-align: center;
+    font-size: 1.8em;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.payment-methods {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 40px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.payment-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-item img {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s ease;
+}
+
+.payment-item:hover img {
+    transform: translateY(-5px);
+}
+
+.payment-item span {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+/*------------------------------------------------- ADDRESS -------------------------------------------------------*/
+
+.address {
+    width: 75%;
+    margin: 0 auto;
+    padding-bottom: 120px;
+}
+
+.map-container {
+    width: 600px;
+    height: 300px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.address-title {
+    text-align: center;
+    font-weight: 400;
+    text-decoration: underline 1.5px black;
+    text-underline-offset: 0.2rem;
+}
+
+.address-row {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.address-street {
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.metro-stations {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.metro-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.metro-item span {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*------------------------------------------------------------- FOOTER -------------------------------------------------------------*/
+
+footer {
+    width: 100%;
+    min-height: 45vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: #1A1E26;
+}
+
+footer h2,
+footer h3,
+footer a,
+footer span,
+footer p {
+    color: #FAFAFA;
+}
+
+.footer-content {
+    display: flex;
+    width: 85%;
+    height: 170px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.footer-img-container img {
+    width: 170px;
+    height: 170px;
+}
+
+.footer-heading {
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-align: center;
+    margin: 0;
+}
+
+.footer-logo {
+    font-size: 1.3rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.footer-nav a {
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline 1px;
+    text-underline-offset: 0.2rem;
+}
+
+.footer-contacts {
+    align-self: self-start;
+    padding-left: 45px;
+    padding-top: 26px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-social a img {
+    transition: transform 0.3s ease;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.1);
+}
+
+.footer-schedule {
+    margin-left: auto;
+}
+
+.footer-address {
+    text-align: center;
+    font-style: normal;
+}
+
+.footer-address :first-child {
+    text-decoration: underline 1px;
+    text-underline-offset: 0.2rem;
+    font-weight: 200;
+}
+
+.footer-address :last-child {
+    font-weight: 200;
+}
+
+.footer-phone {
+    font-size: 1.15rem;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.footer-phone:hover {
+    text-decoration: underline 1px;
+    text-underline-offset: 0.2rem;
+}
+
+@media (min-width: 800px) {
+    .header__info__mobile {
+        display: none;
+    }
+}
+
+/*====================================================== SMALLER PHONE SCRIN =========================================================*/
+@media (max-width: 400px) {
+
+    /* Общие изменения */
+    .content__wrapper,
+    .header,
+    .address,
+    .footer-content {
+        width: 96%;
+    }
+
+    /* Шапка */
+    .header__logo {
+        font-size: 1.8rem;
+    }
+
+    .header__info__mobile .header__address,
+    .header__info__mobile .header__hours {
+        font-size: 1rem;
+    }
+
+    .header__phone__mobile a {
+        font-size: 1.2rem;
+    }
+
+    /* Герой */
+    .hero__content h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .hero__description {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    /* Преимущества */
+    .benefit-number {
+        font-size: 1.8rem;
+    }
+
+    .benefit-text {
+        font-size: 1rem;
+    }
+
+    /* О нас */
+    .about-us {
+        font-size: 1.2rem;
+    }
+
+    .text-paragraph {
+        font-size: 1rem;
+    }
+
+    /* Отзывы */
+    .review-image img {
+        height: 25vh;
+    }
+
+    .review-store,
+    .review-rating span {
+        font-size: 1rem;
+    }
+
+    .review-text {
+        font-size: 0.9rem;
+    }
+
+    /* Доставка */
+    .delivery-item span {
+        font-size: 1rem;
+    }
+
+    /* Оплата */
+    .payment-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .payment-item span {
+        font-size: 1rem;
+    }
+
+    /* Адрес */
+    .map-container {
+        height: 20vh;
+    }
+
+    .address-title {
+        font-size: 1.2rem;
+    }
+
+    .address-street {
+        font-size: 1.1rem;
+    }
+
+    .metro-item span {
+        font-size: 0.9rem;
+    }
+
+    /* Подвал */
+    .footer-logo {
+        font-size: 1rem;
+    }
+
+    .footer-address {
+        font-size: 0.8rem;
+    }
+
+    .footer-contacts h3 {
+        font-size: 1rem;
+    }
+
+    .footer-phone {
+        font-size: 0.9rem;
+    }
+
+    .footer-nav li a {
+        font-size: 0.9rem;
+    }
+}
+
+/*========================================================== PHONE ================================================================*/
+
+@media (max-width: 767px) and (orientation: portrait),
+(max-width: 767px) and (orientation: landscape) and (max-height: 767px) {
+    .hero-bg {
+        filter: brightness(68%);
+        object-position: 25% 75%;
+    }
+
+    .content__wrapper {
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    /*---------------- HEADER -------------------*/
+    .header {
+        width: 92%;
+        margin: 5px auto;
+        background: none;
+    }
+
+    header .container {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 5px;
+    }
+
+    .header__brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .header__logo {
+        font-size: 2rem;
+        font-weight: 200;
+    }
+
+    .header__divider {
+        height: 1px;
+        width: 75%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header__social {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .header__social img {
+        width: auto - 3%;
+        height: auto - 3%;
+        object-fit: contain;
+    }
+
+    .header__social img:hover {
+        transform: none;
+    }
+
+    .header__social .header__phone {
+        display: none;
+    }
+
+    .header__phone a:hover {
+        text-decoration: none;
+    }
+
+    .header__info {
+        display: none;
+    }
+
+    .header__info__mobile {
+        width: 92%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+
+    .header__info__mobile .header__address {
+        font-size: 1.2rem;
+    }
+
+    .header__phone__mobile a {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: white;
+        text-decoration: none;
+    }
+
+    .header__info__mobile .header__hours {
+        font-size: 1.2rem;
+    }
+
+    .header__actions {
+        display: none;
+    }
+
+    /*-------------- HERO SECTION -----------------*/
+
+    .hero__content {
+        z-index: 2;
+        max-width: 100%;
+        padding: 5vh 0 0 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .hero__content h1 {
+        font-size: 2rem;
+        margin: 0 0 20px 0;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero__description {
+        width: 100%;
+        font-size: 1.3rem;
+        margin: 0 0 30px 0;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .pick-part-button {
+        transition: none;
+    }
+
+    /*---------------- Benefits ---------------*/
+
+    .benefits {
+        height: auto;
+    }
+
+    .line {
+        height: 6px;
+        background: #12151A;
+    }
+
+    .section-title {
+        padding: 0 10px;
+        font-size: 1.4rem;
+    }
+
+    .benefits-flex {
+        padding-top: 35px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .benefits-flex>*:nth-child(5) {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+
+    .benefit-number {
+        font-size: 2.1rem;
+        font-weight: 600;
+        display: inline-block;
+        transition: none;
+    }
+
+    .benefit-card:hover .benefit-number {
+        transform: none;
+    }
+
+    .benefit-text {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    /*----------------- About -----------------*/
+
+    .about {
+        max-width: 92%;
+        width: 100%;
+        padding-top: 80px;
+        display: flex;
+        justify-self: center;
+        gap: 100px;
+        text-align: start;
+    }
+
+    .about__container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-us {
+        font-size: 1.4rem;
+        font-weight: 800;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .text-paragraph {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .highlight {
+        text-decoration: underline 1px;
+    }
+
+    .about img {
+        display: none;
+    }
+
+    .paragraph-to-hide {
+        display: none;
+    }
+
+    /*-------------------- Review ----------------------*/
+
+    .reviews {
+        padding-top: 30px;
+    }
+
+    .reviews-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    .review-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .review-image img {
+        width: 100%;
+        height: 35vh;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .reviews-flex {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        gap: 0px;
+    }
+
+    .review-reverse {
+        flex-direction: column;
+    }
+
+    .review-gray-card {
+        padding-bottom: 50px;
+        padding-top: 0px;
+        margin-top: 50px;
+    }
+
+    .review-body {
+        width: 92%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .review-store {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .review-rating span {
+        font-size: 1.2rem;
+    }
+
+    .review-text {
+        margin: 0;
+        font-size: 1.1rem;
+    }
+
+    .review-product span {
+        font-size: 1rem;
+        text-decoration: underline 1px;
+        transition: none
+    }
+
+    .reviews-footer {
+        padding-top: 50px;
+    }
+
+    .reviews-footer a {
+        font-size: 1.3rem;
+        text-decoration: underline 1px black;
+    }
+
+    .all-reviews-link:hover {
+        text-decoration: none;
+    }
+
+    /*---------------- Delivery --------------------*/
+
+    .delivery {
+        padding-bottom: 40px;
+    }
+
+    .delivery-methods {
+        grid-template-columns: 1fr 1fr;
+        width: 92%;
+        gap: 20px;
+    }
+
+    .delivery-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        min-height: 50px;
+    }
+
+    .delivery-item span {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    /*------------------ Payment --------------------*/
+
+    .payment {
+        padding-bottom: 70px;
+    }
+
+    .payment .section-title {
+        font-size: 1.4em;
+    }
+
+    .payment-methods {
+        width: 92%;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .payment-item img {
+        width: 60px;
+        height: 60px;
+        transition: none;
+    }
+
+    .payment-item:hover img {
+        transform: none;
+    }
+
+    .payment-item span {
+        font-size: 1.2rem;
+    }
+
+    /*----------------- Address ---------------*/
+
+    .address {
+        width: 92%;
+        margin: 0 auto;
+        padding-bottom: 80px;
+    }
+
+    .map-container {
+        width: 100%;
+        height: 25vh;
+    }
+
+    .address-title {
+        text-decoration: underline 1px black;
+        font-size: 1.4rem;
+    }
+
+    .address-row {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .address-street {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .metro-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .metro-item span {
+        font-size: 1.1rem;
+    }
+
+    /*----------------------- Footer ------------------------*/
+
+    footer {
+        min-height: 30vh;
+        height: 35vh;
+        display: flex;
+        padding-bottom: 80px;
+        padding-top: 30px;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 92%;
+        height: auto;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .footer-logo {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    .footer-address {
+        font-size: 0.9rem;
+    }
+
+    .footer-content :first-child {
+        order: 3;
+    }
+
+    .footer-schedule {
+        order: 1;
+    }
+
+    .footer-contacts {
+        margin: 0;
+        padding: 0;
+        order: 2;
+    }
+
+    .footer-contacts h3 {
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+
+    .footer-phone {
+        font-size: 1rem;
+        font-weight: 200;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer nav {
+        order: 4;
+    }
+
+    .footer-img-container img {
+        height: auto;
+    }
+
+    .footer-img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        min-width: 150px;
+        width: 80%;
+        max-width: 200px;
+    }
+
+    .footer-section {
+        width: 100%;
+        height: auto;
+        justify-self: center;
+    }
+
+    .footer-nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-nav li a {
+        display: grid;
+        place-items: center;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+}
+
+/*======================================================== TABLET ===================================================================*/
+
+/* Планшеты (горизонтальные и вертикальные) */
+@media (min-width: 768px) and (max-width: 1400px) and (min-height: 768px),
+(min-width: 768px) and (max-width: 1400px) and (orientation: portrait) {
+
+    /* Общие изменения */
+    .content__wrapper,
+    .header,
+    .address,
+    .footer-content {
+        width: 90%;
+    }
+
+    /*---------------- HEADER -------------------*/
+    .header {
+        width: 92%;
+        margin: 5px auto;
+        background: none;
+    }
+
+    header .container {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 5px;
+    }
+
+    .header__brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .header__logo {
+        font-size: 2.4rem;
+        font-weight: 200;
+    }
+
+    .header__divider {
+        height: 1px;
+        width: 75%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header__social {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .header__social img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .header__social img:hover {
+        transform: none;
+    }
+
+    .header__social .header__phone {
+        display: none;
+    }
+
+    .header__phone a:hover {
+        text-decoration: none;
+    }
+
+    .header__info {
+        display: none;
+    }
+
+    .header__info__mobile {
+        width: 92%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+
+    .header__info__mobile .header__address {
+        font-size: 1.2rem;
+    }
+
+    .header__phone__mobile a {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: white;
+        text-decoration: none;
+    }
+
+    .header__info__mobile .header__hours {
+        font-size: 1.6rem;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .header__actions {
+        display: none;
+    }
+
+    /*-------------- HERO SECTION -----------------*/
+    .hero__content {
+        z-index: 2;
+        max-width: 100%;
+        padding: 20vh 0 0 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .hero__content h1 {
+        font-size: 2rem;
+        margin: 0 0 20px 0;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero__description {
+        width: 100%;
+        font-size: 1.6rem;
+        margin: 0 0 30px 0;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .pick-part-button {
+        width: 32%;
+        font-size: 1.3rem;
+        transition: none;
+    }
+
+    /*---------------- Benefits ---------------*/
+
+    .benefits {
+        height: auto;
+    }
+
+    .line {
+        height: 6px;
+        background: #12151A;
+    }
+
+    .section-title {
+        padding: 0 10px;
+        font-size: 1.8rem;
+    }
+
+    .benefits-flex {
+        padding-top: 35px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .benefits-flex>*:nth-child(5) {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+
+    .benefit-number {
+        font-size: 2.4rem;
+        font-weight: 600;
+        display: inline-block;
+        transition: none;
+    }
+
+    .benefit-card:hover .benefit-number {
+        transform: none;
+    }
+
+    .benefit-text {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    /*----------------- About -----------------*/
+
+    .about {
+        max-width: 92%;
+        width: 100%;
+        padding-top: 80px;
+        display: flex;
+        justify-self: center;
+        gap: 100px;
+        text-align: start;
+    }
+
+    .about__container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-us {
+        font-size: 1.8rem;
+        font-weight: 800;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .text-paragraph {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .highlight {
+        text-decoration: underline 1px;
+    }
+
+    .about img {
+        display: none;
+    }
+
+    .paragraph-to-hide {
+        display: none;
+    }
+
+    /*-------------------- Review ----------------------*/
+
+    .reviews {
+        padding-top: 30px;
+    }
+
+    .reviews-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .review-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .review-image img {
+        width: 100%;
+        height: 35vh;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .reviews-flex {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        gap: 0px;
+    }
+
+    .review-reverse {
+        flex-direction: column;
+    }
+
+    .review-gray-card {
+        padding-bottom: 50px;
+        padding-top: 0px;
+        margin-top: 50px;
+    }
+
+    .review-body {
+        width: 92%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .review-store {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .review-rating span {
+        font-size: 1.5rem;
+    }
+
+    .review-text {
+        margin: 0;
+        font-size: 1.4rem;
+    }
+
+    .review-product span {
+        font-size: 1.3rem;
+        text-decoration: underline 1px;
+        transition: none
+    }
+
+    .reviews-footer {
+        padding-top: 50px;
+    }
+
+    .reviews-footer a {
+        font-size: 1.5rem;
+        text-decoration: underline 1px black;
+    }
+
+    .all-reviews-link:hover {
+        text-decoration: none;
+    }
+
+    /* Доставка */
+
+    .delivery .section-title {
+        font-size: 1.8rem;
+    }
+
+    .delivery-methods {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Оплата */
+
+    .payment .section-title {
+        font-size: 2rem;
+    }
+
+    .payment-methods {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .payment-item {
+        width: 30%;
+    }
+
+    /*----------------- Address ---------------*/
+
+    .address {
+        width: 92%;
+        margin: 0 auto;
+        padding-bottom: 80px;
+    }
+
+    .map-container {
+        width: 100%;
+        height: 25vh;
+    }
+
+    .address-title {
+        text-decoration: underline 1px black;
+        font-size: 2rem;
+    }
+
+    .address-row {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .address-street {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .metro-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .metro-item span {
+        font-size: 1.5rem;
+    }
+
+    /* Footer */
+
+    footer {
+        min-height: 28vh;
+        height: 45vh;
+        display: flex;
+        align-items: center;
+        padding-bottom: 80px;
+        padding-top: 30px;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-areas:
+            "nav     img      contacts"
+            "schedule schedule schedule";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 20px 30px;
+        align-items: flex-start;
+    }
+
+    .footer-img-container {
+        grid-area: img;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-section nav {
+        grid-area: nav;
+        text-align: center;
+    }
+
+    .footer-nav {
+        padding: 0;
+        text-align: center;
+    }
+
+    .footer-nav a {
+        font-size: 1.4rem;
+    }
+
+    .footer-heading {
+        font-size: 1.6rem;
+    }
+
+    .footer-phone {
+        font-size: 1.4rem;
+    }
+
+    .footer-contacts img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-contacts {
+        padding: 0;
+        grid-area: contacts;
+        text-align: center;
+    }
+
+    .footer-logo {
+        font-size: 2rem;
+    }
+
+    .footer-address {
+        font-size: 1.4rem;
+    }
+
+    .footer-schedule {
+        margin: 0;
+        grid-area: schedule;
+    }
+
+    .footer-nav li a {
+        justify-content: center;
+    }
+}
