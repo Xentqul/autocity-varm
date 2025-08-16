@@ -1,4 +1,3 @@
 User-agent: *
-Allow: /$
-Disallow: /
+Allow: /
 Sitemap: https://autocityvarm.ru/sitemap.xml
