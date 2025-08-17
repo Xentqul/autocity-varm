@@ -361,9 +361,9 @@ main {
     background-color: #898989;
 }
 
-.review-gray-card cite,
+.review-gray-card h3,
 .review-gray-card p,
-.review-gray-card .review-product {
+.review-gray-card span {
     color: #FAFAFA !important;
 }
 
@@ -376,7 +376,7 @@ main {
     color: #e8eaff !important;
 }
 
-.review-gray-card .review-product {
+.review-gray-card span {
     font-weight: 300;
 }
 
@@ -406,7 +406,7 @@ main {
     font-style: italic;
 }
 
-.review-product span {
+.review-meta span {
     font-size: 1.2rem;
     font-style: italic;
     color: #A69F9F;
@@ -415,7 +415,7 @@ main {
     transition: color 0.3s ease;
 }
 
-.review-product span:hover {
+.review-meta span:hover {
     color: #575757;
 }
 
@@ -1115,7 +1115,7 @@ footer p {
         font-size: 1.1rem;
     }
 
-    .review-product span {
+    .review-meta span {
         font-size: 1rem;
         text-decoration: underline 1px;
         transition: none
@@ -1610,7 +1610,7 @@ footer p {
         font-size: 1.4rem;
     }
 
-    .review-product span {
+    .review-meta span {
         font-size: 1.3rem;
         text-decoration: underline 1px;
         transition: none
