@@ -1776,7 +1776,7 @@ footer p {
 
 /*============================================================ LAPTOP ================================================================*/
 
-@media (min-width: 1024px) and (max-height: 700px) {
+@media (min-width: 1024px) and (max-width: 1200px) and (max-height: 700px) {
 
     .content__wrapper {
         width: 90%;
